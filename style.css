@@ -1,0 +1,52 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+/*using a comma to put syles on mulitple elements */
+.box, .container {
+	border: 1px solid skyblue;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+/*using the > for direct child selectors */
+
+.container > .box {
+	background-color: lightgrey;
+}
+
+.container {
+	width: 80vw;
+	height: 50vh;
+}
+.box {
+	width: 50vw;
+	height: 20vh;
+}
+.vmin-box {
+	width: 50vmin; /* 50% of the smaller view? */
+	height: 50vmin;
+	background-color: lightcyan;
+}
+
+.vmax-box{
+	width: 50vmax; /*50% of the max view? */
+	height: 50vmax;
+	background-color: lightslategrey;
+}
+
+/* : hover ability */
+.box:hover, .vmax-box:hover, .vmin-box:hover {
+	background-color: lightcoral;
+}
+
+
+a, a:visited, a:active {
+	text-decoration: none;
+	color: orangered;
+	font-size: 5vmin;
+}
